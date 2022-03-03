@@ -43,6 +43,42 @@ footer {
     text-align: center;
     
 }
-h1 {
+.divMain {
     flex-grow: 1;
+}
+
+.contadorButton{
+    background-color: rgb(48, 42, 42);
+    border: none;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    font-size: 18px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.contadorEstado {
+
+        background-color: white;
+        color: black;
+        border: 2px solid black;
+        padding: 12px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        font-weight: 900;
+
+}
+
+.agregarCarritoButton {
+    background-color: rgb(48, 42, 42);
+    border: none;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    font-size: 18px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    margin-top: 10px;
+}
+
+.itemCount {
+    margin:100px 0px 0px 20px;    
 }
