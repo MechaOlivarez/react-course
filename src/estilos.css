@@ -10,6 +10,7 @@ html, body, #root {
 #root {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
 }
 body {
     background-color: whitesmoke;
@@ -43,10 +44,6 @@ footer {
     text-align: center;
     
 }
-.divMain {
-    flex-grow: 1;
-}
-
 .contadorButton{
     background-color: rgb(48, 42, 42);
     border: none;
@@ -81,4 +78,21 @@ footer {
 
 .itemCount {
     margin:100px 0px 0px 20px;    
+}
+
+.sectionCard {
+    display: flex;
+    flex-direction: row;
+    margin-left: 8%;
+    width: 50%;
+    margin-top: 80px;
+    justify-content: space-between;
+    margin-bottom: 80px;
+
+    
+}
+
+.card .card-img-top{
+   height: 18rem ;
+   
 }

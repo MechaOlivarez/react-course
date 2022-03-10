@@ -1,4 +1,4 @@
-import logo from '../imagenes/Capture.PNG'
+//import logo from './imagenesProductos/Capture.PNG'}
 import Cartwidget from './Cartwidget'
 
 
@@ -6,8 +6,7 @@ import Cartwidget from './Cartwidget'
 const Header = () => {
   return (
     <header>
-      <img src={logo} className ='logo'
-      />
+    {/*  <img src={logo} className ='logo'></img>*/}
         <h1>Candle Lab</h1>
         <nav>
           <a href="">About us </a>
