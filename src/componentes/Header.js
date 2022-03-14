@@ -1,4 +1,4 @@
-//import logo from './imagenesProductos/Capture.PNG'}
+import logo from '/public.../imagenesProductos/Capture.PNG'
 import Cartwidget from './Cartwidget'
 
 

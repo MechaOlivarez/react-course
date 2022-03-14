@@ -76,11 +76,8 @@ footer {
     margin-top: 10px;
 }
 
-.itemCount {
-    margin:100px 0px 0px 20px;    
-}
 
-.sectionCard {
+.sectionCards {
     display: flex;
     flex-direction: row;
     margin-left: 8%;
@@ -92,7 +89,21 @@ footer {
     
 }
 
+.card{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    margin-top: 4rem;
+}
+
+.cardbody{
+    height:18rem ;
+}
+
 .card .card-img-top{
-   height: 18rem ;
+   height: 24rem ;
    
 }
+
+

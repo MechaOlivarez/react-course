@@ -4,7 +4,7 @@ import Item from "./Item.js"
 
 const ItemList = ({items}) => {
   return (
-    <section className="sectionCard">
+    <section className="sectionCards">
         {productos.map(item => {
             return(
         <div>
