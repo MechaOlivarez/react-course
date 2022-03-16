@@ -1,30 +1,33 @@
 import { useState, useEffect } from 'react';
 import productos from '../baseDatos/productos.js'
 import ItemDetail from './ItemDetail.js';
+import { useParams} from 'react-router-dom'
 
-function getProducto() {
+
+function getProducto(candleid) {
     return new Promise((resolve, reject) => {
         setTimeout(function(){
-            resolve (productos[1]);
+            resolve (productos.find ( item => item.id === Number(candleid)));
+
         },2000);
     });   
 }
 
-function ItemDetailContainer ({greeting}) {
+function ItemDetailContainer () {
 
     const [item, setItem] = useState([])
+    const {candleid} = useParams()
     
     useEffect(()=>{
-        getProducto()
+        getProducto(candleid)
         .then(respuestaPromise => setItem(respuestaPromise))
         .catch(error => console.log(error));
         
-    },[]);  
+    },[candleid]);  
 
     
     return (
-        <div class="divMain">
-            <h2>{greeting}</h2>
+        <div>
             <ItemDetail item={item}></ItemDetail>
         </div>
     )

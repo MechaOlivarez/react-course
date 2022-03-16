@@ -1,19 +1,20 @@
-import logo from '/public.../imagenesProductos/Capture.PNG'
+import { Link } from 'react-router-dom'
+import logo from '../Capture.png'
 import Cartwidget from './Cartwidget'
+import Nav from './Nav'
 
 
 
 const Header = () => {
   return (
     <header>
-    {/*  <img src={logo} className ='logo'></img>*/}
-        <h1>Candle Lab</h1>
-        <nav>
-          <a href="">About us </a>
-          <a href="">Shop online</a>
-          <a href="">Contact</a>
-          <Cartwidget />
-        </nav>
+        <img src={logo} className ='logo'></img>
+        <Link to="/">
+          <h1>Candle Lab</h1>
+        </Link>
+        <Nav/> 
+        <Link to="/carrito"><Cartwidget /></Link>
+        
     </header>
   )
 }

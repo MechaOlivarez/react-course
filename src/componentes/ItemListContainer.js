@@ -11,7 +11,7 @@ function getDatos() {
     });   
 }
 
-function ItemListContainer ({greeting}) {
+function ItemListContainer () {
 
     const [items, setItems] = useState([])
     
@@ -24,8 +24,7 @@ function ItemListContainer ({greeting}) {
 
     
     return (
-        <div class="divMain">
-            <h1>{greeting}</h1>
+        <div>
             <ItemList items={items}/>
         </div>
     )

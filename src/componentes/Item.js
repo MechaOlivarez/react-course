@@ -1,6 +1,8 @@
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button, Card} from "react-bootstrap";
+import {Card} from "react-bootstrap";
+import { Link } from "react-router-dom";
+
 
 
 const Item = ({item}) => {
@@ -15,7 +17,7 @@ const Item = ({item}) => {
         <br></br>
         Precio: £{item.precio}
         </Card.Text>
-        <Button variant="dark">Ver más</Button>
+        <Link to={`/candle/${item.id}`}>Ver más</Link>
         </Card.Body>
         </Card>
     </div>
