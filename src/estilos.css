@@ -77,23 +77,43 @@ footer {
 }
 
 .itemCount {
-    margin:100px 0px 0px 20px;    
+    margin:10px 0px 0px 20px;    
 }
 
 .sectionCards {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 80px;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-top: 6rempx;
     justify-content: space-between;
     margin-bottom: 80px;
-
-    
+       
 }
 
+.card {
+    margin-top: 4rem;
+    border-color: whitesmoke;
+    background-color: whitesmoke;
+}
 .card .card-img-top{
    height: 18rem ;
    
+}
+
+.divItemDetail{
+    display: flex;
+    flex-direction: row;
+    width: 48rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.divItemDetail img {
+    width: 28rem;
+    margin-right: 3rem;
+    height: 32rem;
 }

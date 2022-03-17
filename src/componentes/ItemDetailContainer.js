@@ -7,7 +7,7 @@ import { useParams} from 'react-router-dom'
 function getProducto(candleid) {
     return new Promise((resolve, reject) => {
         setTimeout(function(){
-            resolve (productos.find ( item => item.id === Number(candleid)));
+            resolve (productos.find ( item => item.id === candleid));
 
         },2000);
     });   
