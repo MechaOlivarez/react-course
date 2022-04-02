@@ -1,17 +1,14 @@
-import productos from "../baseDatos/productos.js"
+
 import Item from "./Item.js"
 
 
 const ItemList = ({items}) => {
   return (
     <section className="sectionCards">
-        {productos.map(item => {
+        {items.map(item => {
             return(
-        <div>
-            <Item
-                key={item.id}
-                item={item}
-            />  
+        <div key={item.id}>
+            <Item item={item}/>  
         </div>
             )
         

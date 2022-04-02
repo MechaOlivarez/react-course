@@ -27,7 +27,7 @@ const productos = [
         "precio": "30 euros",
         "imagen":"/imagenesProductos/columnasroman.jpg",
         "descripcion":"- HANDCRAFTED IN NEW YORK CITY, NEW YORK, USA  - COSMETIC GRADE ALL-NATURAL BEESWAX & ALL-NATURAL SOY WAX- NON-SMOKE COTTON WICK- ECO-FRIENDLY & SUSTAINABLE WAX- 100% CLEAN-BURNING, PHTHALATE-FREE, PARAFFIN-FREE. ",
-        "stock": "5"
+        "stock": "8"
     },
     {
         "id": "4",

@@ -7,8 +7,13 @@ import { useParams} from 'react-router-dom'
 function getDatos(categoriacolor) {
     return new Promise((resolve, reject) => {
         setTimeout(function(){
-            resolve (productos.filter ( item => item.color !== categoriacolor));
-        },2000);
+            if (categoriacolor) {
+                resolve (productos.filter ( item => item.color === categoriacolor));
+            } else {
+                resolve (productos)
+            }
+            
+        },1500);
     });   
 }
 
@@ -22,7 +27,7 @@ function ItemListContainer () {
         .then(respuestaPromise => setItems(respuestaPromise))
         .catch(error => console.log(error));
         
-    },[]);  
+    },[categoriacolor]);  
 
     
     return (
