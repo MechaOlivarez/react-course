@@ -6,8 +6,6 @@ const Nav = () => {
         <Link to="/categoria/Blanco" className='NavLink'>Velas blancas </Link>
         <Link to="/categoria/Celeste" className='NavLink'>Velas de colores</Link>
         <Link to="/categoria/Negro" className='NavLink'>Velas negras</Link>
-
-
     </nav>
   )
 }

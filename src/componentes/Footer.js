@@ -3,8 +3,8 @@ const Footer = () => {
 return (
     <footer>
         <div>
-            © 2020 Copyright:
-            <a href="https://candlesLab.com/">CandlesLab</a>
+            <p>© 2020 Copyright: CandleLab</p>
+            <p>Todos los derechos reservados</p>
         </div>
     </footer>
 )
